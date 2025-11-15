@@ -13,7 +13,7 @@ export function NavbarHome() {
 
     return (
         <>
-            <nav className="md:fixed bg-[#121f3a]/60 flex justify-between items-center gap-16 py-3 px-10 md:left-1/2 md:translate-x-[-50%] md:top-[20px] md:rounded-full text-white shadow-lg md:z-10 backdrop-blur-md">
+            <nav className="md:fixed bg-[#121f3a]/60 flex justify-between items-center gap-16 py-3 px-10 md:left-1/2 md:translate-x-[-50%] md:top-5 md:rounded-full text-white shadow-lg md:z-10 backdrop-blur-md">
                 <div className="hidden md:flex items-center gap-10">
                     <img src="src/assets/logo_prod_sense.png" alt="" className="h-20 w-20" />
 
