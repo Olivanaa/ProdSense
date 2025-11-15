@@ -1,9 +1,10 @@
-import { Navbar } from "../components/Navbar";
+import { NavbarHome } from "../components/NavbarHome";
+
 
 export function Home() {
     return (
-        <>            
-            <Navbar />
+        <main className="pt-30">            
+            <NavbarHome />
             {/* Hero Section */}
             <section className="min-h-screen flex items-center justify-center py-10 mt-10">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -98,6 +99,6 @@ export function Home() {
                     </div>
                 </div>
             </section>
-        </>
+        </main>
     )
 }
