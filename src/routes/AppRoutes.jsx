@@ -1,11 +1,12 @@
 import { createBrowserRouter } from "react-router-dom";
-import { Layout } from "../pages/Layout";
-import { PageNotFound } from "../pages/PageNotFound";
-import { Home } from "../pages/Home";
-import { Login } from "../pages/Login";
-import { Dashboard } from "../pages/Dashboard";
-import { AdminLayout } from "../pages/AdminLayout";
-import { AdminDashboard } from "../pages/AdminDashboard";
+import Layout from "../pages/Layout";
+import PageNotFound  from "../pages/PageNotFound";
+import Home from "../pages/Home";
+import Login from "../pages/Login";
+import Dashboard from "../pages/Dashboard";
+import AdminLayout from "../pages/AdminLayout";
+import AdminDashboard from "../pages/AdminDashboard";
+import Contact from "../pages/Contact";
 import PrivateRoute from "../services/Auth";
 
 export const router = createBrowserRouter([
@@ -27,7 +28,11 @@ export const router = createBrowserRouter([
                 element: <PrivateRoute requiredRole="user">
                     <Dashboard/>
                 </PrivateRoute>,
-            }
+            },
+            {
+                path: "contact", 
+                element: <Contact/>,
+            },
         ]  
     },
     {
@@ -41,6 +46,5 @@ export const router = createBrowserRouter([
                 </PrivateRoute>,
             }
         ]
-
     }
 ])
