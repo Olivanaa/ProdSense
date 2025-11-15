@@ -6,6 +6,7 @@ import { Login } from "../pages/Login";
 import { Dashboard } from "../pages/Dashboard";
 import { AdminLayout } from "../pages/AdminLayout";
 import { AdminDashboard } from "../pages/AdminDashboard";
+import PrivateRoute from "../services/Auth";
 
 export const router = createBrowserRouter([
     {
@@ -23,7 +24,9 @@ export const router = createBrowserRouter([
             },
             {
                 path: "dashboard", 
-                element: <Dashboard/>,
+                element: <PrivateRoute requiredRole="user">
+                    <Dashboard/>
+                </PrivateRoute>,
             }
         ]  
     },
@@ -33,7 +36,9 @@ export const router = createBrowserRouter([
         children:[
             {
                 index: true,
-                element: <AdminDashboard/>,
+                element: <PrivateRoute requiredRole="admin">
+                    <AdminDashboard/>
+                </PrivateRoute>,
             }
         ]
 

@@ -1,0 +1,18 @@
+{
+    "usuarios": [
+        {
+            "id": 1,
+            "nome": "Fulano de Tal",
+            "email": "admin@email.com",
+            "senha": "123",
+            "role": "admin"
+        },
+        {
+            "id": 2,
+            "nome": "Pamela Oliveira",
+            "email": "pam@email.com",
+            "senha": "123",
+            "role": "user"
+        }
+    ]
+}
