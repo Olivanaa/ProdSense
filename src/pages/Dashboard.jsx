@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
-import { NavbarHome } from "../components/NavbarHome";
+import NavbarHome from "../components/NavbarHome";
 import { fetchDeviceData } from "../utils/DeviceData";
 import EnvironmentCard from "../components/EnvironmentCard";
 import RecommendationCard from "../components/RecommendationCard";
-import { DashboardError } from "./DashboardError";
+import DashboardError  from "./DashboardError";
 
-export function Dashboard() {
+export default function Dashboard() {
     const [dados, setDados] = useState({
         temperatura: null,
         umidade: null,

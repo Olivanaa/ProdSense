@@ -1,7 +1,6 @@
 import logo from "../assets/logo_prod_sense.png";
 
-export function NavBar() {
-
+export default function NavBar() {
     return(
         <nav className="font-body relative border-b-2 shadow-md shadow-roxo/50 border-roxo bg-gray-50 flex justify-between px-3">
             <div className="flex shrink-0 items-center">

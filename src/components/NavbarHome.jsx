@@ -1,14 +1,14 @@
 import { useState } from "react"
 import { Link } from "react-router-dom"
 
-export function NavbarHome() {
+export default function NavbarHome() {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
 
     const listItems = [
-        { name: 'Home', href: 'home' },
-        { name: 'Dashboard', href: 'dashboard' },
-        { name: 'Sobre', href: '#' },
-        { name: 'Contato', href: '#' }
+        { name: 'Home', href: '/' },
+        { name: 'Dashboard', href: '/dashboard' },
+        { name: 'Sobre', href: '/#' },
+        { name: 'Contato', href: '/contact' }
     ]
 
     return (

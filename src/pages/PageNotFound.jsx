@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-export function PageNotFound() {
+export default function PageNotFound() {
     return (
         <main className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-950 to-black">
             <section className="min-h-screen flex items-center justify-center py-20 px-4 sm:px-6 lg:px-8">
