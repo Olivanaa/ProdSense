@@ -11,16 +11,16 @@ export default function Contact() {
             email: "davimunhoz1005@gmail.com",
         },
         {
-            name: "Membro 2",
-            linkedin: "#",
-            github: "#",
-            email: "membro2@email.com",
+            name: "Ana Clara",
+            linkedin: "https://www.linkedin.com/in/ana-clara-rocha-oliveira/",
+            github: "https://github.com/Olivanaa",
+            email: "oliv.anaclara@gmail.com",
         },
         {
-            name: "Membro 3",
-            linkedin: "#",
-            github: "#",
-            email: "membro3@email.com",
+            name: "Matheus Von Koss",
+            linkedin: "https://www.linkedin.com/in/matheus-von-koss-wildeisen-7828a0356/",
+            github: "https://github.com/matheuswildeisen",
+            email: "Wildeisenmatheus@gmail.com",
         },
     ];
 
