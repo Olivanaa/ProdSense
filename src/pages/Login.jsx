@@ -58,7 +58,7 @@ export default function Login() {
     return (
         <main className="flex h-screen">
             <section className="hidden lg:block lg:w-1/2">
-                <img src="src\assets\prodsense_logo.png" alt="" />
+                <img src="prodsense_logo.png" alt="" />
             </section>
             <section className="w-full lg:w-1/2 bg-linear-to-br from-[#dfe5eb] to-[#dadcdd] flex items-center justify-center p-8">
                 <div className="flex items-center justify-center align-itms-center h-full w-full">
