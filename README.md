@@ -1,5 +1,5 @@
 <div align="center">
-  # PRODSENSE
+  <h1>PRODSENSE</h1>
 </div>
 
 <div align="center">
