@@ -1,4 +1,4 @@
-import { NavbarHome } from "../components/NavbarHome";
+import NavbarHome from "../components/NavbarHome";
 import { Activity, Brain, Cpu, Cloud, Gauge, Users, Sparkles, Wind } from "lucide-react";
 import Card from "../components/Card";
 import simulation_wokwi from "../assets/simulation_wokwi.png"
