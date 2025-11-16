@@ -1,4 +1,6 @@
-# PRODSENSE
+<div align="center">
+  # PRODSENSE
+</div>
 
 <div align="center">
   <img src="/public/prodsense_logo.png" width="350">
@@ -122,10 +124,10 @@ Integração com dashboard web permite visualização em tempo real, histórico 
 
 **FIWARE** — Porta 1026
 
-- Entity: urn:ngsi-ld:device111
+- Entity: `urn:ngsi-ld:device111`
 
  - Atributos:
-  luminosity, temperature, humidity, airquality, noise, pci
+  `luminosity`, `temperature`, `humidity`, `airquality`, `noise`, `pci`
 ---
 
 ## 📊 6. Tabelas de Classificação dos Sensores
