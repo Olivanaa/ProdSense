@@ -4,8 +4,10 @@ import Footer from "../components/Footer";
 export default function AdminLayout() {
     return (
         <>
-            <Outlet />
-            <Footer />
+            <div className="bg-gradient-to-br from-gray-900 via-gray-950 to-black ">
+                <Outlet />
+                <Footer />
+            </div>
         </>
     )
 }
