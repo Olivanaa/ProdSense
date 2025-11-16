@@ -1,7 +1,7 @@
 import { Outlet } from "react-router-dom";
-import { Footer } from "../components/Footer";
+import Footer from "../components/Footer";
 
-export function AdminLayout() {
+export default function AdminLayout() {
     return (
         <>
             <Outlet />

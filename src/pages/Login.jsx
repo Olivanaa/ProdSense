@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
-export function Login() {
+export default function Login() {
     const [loginEmail, setLoginEmail] = useState("")
     const [loginSenha, setLoginSenha] = useState("")
     const [loginError, setLoginError] = useState("")

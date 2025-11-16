@@ -1,7 +1,6 @@
-import { NavbarHome } from "../components/NavbarHome";
+import NavbarHome from "../components/NavbarHome";
 
-
-export function Home() {
+export default function Home() {
     return (
         <main className="pt-30">            
             <NavbarHome />
