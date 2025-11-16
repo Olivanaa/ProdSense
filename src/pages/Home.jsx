@@ -9,7 +9,7 @@ export default function Home() {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                         <div className="flex justify-center lg:justify-start">
-                            <img src="src\assets\prodsense_logo.png" alt="Hero Image" />
+                            <img src="prodsense_logo.png" alt="Hero Image" />
                         </div>
                         <div className="text-center lg:text-left">
                             <h1 className="text-4xl lg:text-6xl font-bold text-white leading-tight">

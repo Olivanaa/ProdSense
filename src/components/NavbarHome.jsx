@@ -7,7 +7,7 @@ export default function NavbarHome() {
     const listItems = [
         { name: 'Home', href: '/' },
         { name: 'Dashboard', href: '/dashboard' },
-        { name: 'Sobre', href: '/#' },
+        { name: 'Sobre', href: '/about' },
         { name: 'Contato', href: '/contact' }
     ]
 
@@ -15,7 +15,7 @@ export default function NavbarHome() {
         <>
             <nav className="md:fixed bg-[#121f3a]/60 flex justify-between items-center gap-16 py-3 px-10 md:left-1/2 md:translate-x-[-50%] md:top-5 md:rounded-full text-white shadow-lg md:z-10 backdrop-blur-md">
                 <div className="hidden md:flex items-center gap-10">
-                    <img src="src/assets/logo_prod_sense.png" alt="" className="h-20 w-20" />
+                    <img src="logo_prod_sense.png" alt="" className="h-20 w-20" />
 
                     <ul className="flex gap-8 text-xl">
                         {listItems.map((item) => (

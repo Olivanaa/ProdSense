@@ -1,4 +1,4 @@
-import logo from "../assets/logo_prod_sense.png";
+import logo from "logo_prod_sense.png";
 
 export default function NavBar() {
     return(
