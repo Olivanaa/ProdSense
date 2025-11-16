@@ -7,6 +7,7 @@ import Dashboard from "../pages/Dashboard";
 import AdminLayout from "../pages/AdminLayout";
 import AdminDashboard from "../pages/AdminDashboard";
 import Contact from "../pages/Contact";
+import About from "../pages/About";
 import PrivateRoute from "../services/Auth";
 
 export const router = createBrowserRouter([
