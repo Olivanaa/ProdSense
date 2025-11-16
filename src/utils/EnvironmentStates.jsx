@@ -2,11 +2,11 @@ import { CircleCheck, CircleMinus, CircleAlert, CircleX } from "lucide-react";
 
 const EnvironmentStates = {
     getLightState(lux) {
-        if (lux >= 70) return "EXCELLENT";
-        if (lux >= 50) return "GOOD";
-        if (lux >= 30) return "MODERATE";
-        if (lux >= 10) return "POOR";
-        return "CRITICAL";
+        if (lux <= 20 || lux > 5000) return "CRITICAL";
+        if ((lux > 20 && lux <= 100) || (lux > 1200 && lux <= 5000)) return "POOR";
+        if ((lux > 100 && lux <= 200) || (lux > 800 && lux <= 1200)) return "MODERATE";
+        if ((lux > 200 && lux <= 350) || (lux > 650 && lux <= 800)) return "GOOD";
+        return "EXCELLENT";
     },
 
     getTempState(temp) {

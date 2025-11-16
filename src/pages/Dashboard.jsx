@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
-import NavbarHome from "../components/NavbarHome";
 import { fetchDeviceData } from "../utils/DeviceData";
 import EnvironmentCard from "../components/EnvironmentCard";
 import RecommendationCard from "../components/RecommendationCard";
 import DashboardError  from "./DashboardError";
+import NavBar from "../components/Navbar";
 
 export default function Dashboard() {
     const [dados, setDados] = useState({
@@ -80,8 +80,8 @@ export default function Dashboard() {
             />;
 
     return (
-        <main className="bg-gray-950 min-h-screen lg:pt-30">
-            <NavbarHome />
+        <main className="bg-gray-950 min-h-screen mb-10">
+            <NavBar />
 
             <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16">
                 <h1 className="text-4xl font-bold text-white mb-12 text-center">
@@ -91,7 +91,7 @@ export default function Dashboard() {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <EnvironmentCard title="Temperatura" value={dados.temperatura} unit="°C" type="temperature"/>
                     <EnvironmentCard title="Umidade" value={dados.umidade} unit="%" type="humidity"/>
-                    <EnvironmentCard title="Luminosidade" value={dados.luminosidade} type="light"/>
+                    <EnvironmentCard title="Luminosidade" value={dados.luminosidade} unit="lux" type="light"/>
                     <EnvironmentCard title="Ruído" value={dados.ruido} unit="dB" type="noise"/>
                     <EnvironmentCard title="Qualidade do Ar" value={dados.qualidadeAr} type="air"/>
                     <EnvironmentCard title="PCI" value={dados.pci} type="pci"/>

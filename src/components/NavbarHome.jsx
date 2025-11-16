@@ -1,8 +1,10 @@
 import { useState } from "react"
 import { Link } from "react-router-dom"
+import { getLoggedUser, logout } from "../services/Auth"
 
 export default function NavbarHome() {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
+    const usuario = getLoggedUser()
 
     const listItems = [
         { name: 'Home', href: '/' },
@@ -10,6 +12,11 @@ export default function NavbarHome() {
         { name: 'Sobre', href: '/about' },
         { name: 'Contato', href: '/contact' }
     ]
+
+    const handleLogout = () => {
+        logout()
+        setIsMenuOpen(false)
+    }
 
     return (
         <>
@@ -25,7 +32,21 @@ export default function NavbarHome() {
                         ))}
                     </ul>
 
-                    <Link to="/login" className="bg-blue-600 text-white px-6 py-2 rounded-full text-sm font-medium hover:bg-blue-700 transition-all duration-200">Login</Link>
+                    {usuario ? (
+                        <button 
+                            onClick={handleLogout}
+                            className="bg-blue-600 text-white px-6 py-2 rounded-full text-sm font-medium hover:bg-blue-700 transition-all duration-200"
+                        >
+                            Logout
+                        </button>
+                    ) : (
+                        <Link 
+                            to="/login" 
+                            className="bg-blue-600 text-white px-6 py-2 rounded-full text-sm font-medium hover:bg-blue-700 transition-all duration-200"
+                        >
+                            Login
+                        </Link>
+                    )}
                 </div>
 
                 <div className="md:hidden">
@@ -48,12 +69,11 @@ export default function NavbarHome() {
                     <div className="flex flex-col items-center space-y-8 px-6">
                         <div className="mb-8">
                             <img
-                                src="src\assets\logo_prod_sense.png"
+                                src="logo_prod_sense.png"
                                 alt="ProdSense"
                                 className="h-24 w-24 mx-auto"
                             />
                         </div>
-
 
                         {listItems.map((item) => (
                             <Link
@@ -67,13 +87,22 @@ export default function NavbarHome() {
                         ))}
 
                         <div className="pt-8 w-full max-w-xs">
-                            <a
-                                href="#"
-                                className="bg-blue-600 text-white px-8 py-4 rounded-full text-lg font-medium hover:bg-blue-700 transition-all duration-200 w-full text-center block"
-                                onClick={() => setIsMenuOpen(false)}
-                            >
-                                Login
-                            </a>
+                            {usuario ? (
+                                <button
+                                    onClick={handleLogout}
+                                    className="bg-blue-600 text-white px-8 py-4 rounded-full text-lg font-medium hover:bg-blue-700 transition-all duration-200 w-full text-center block"
+                                >
+                                    Logout
+                                </button>
+                            ) : (
+                                <Link
+                                    to="/login"
+                                    className="bg-blue-600 text-white px-8 py-4 rounded-full text-lg font-medium hover:bg-blue-700 transition-all duration-200 w-full text-center block"
+                                    onClick={() => setIsMenuOpen(false)}
+                                >
+                                    Login
+                                </Link>
+                            )}
                         </div>
 
                         <button
