@@ -260,7 +260,7 @@ npm run dev
 *Interface do admin com metricas, graficos, e monitoramento continuo*
 
 ## 🎥 10. Vídeo explicativo
-🔗 [YouTube]()
+🔗 [YouTube](https://www.youtube.com/watch?v=RucTsdYcIwQ)
 
 👥 Autores
 
